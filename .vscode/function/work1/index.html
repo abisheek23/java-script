@@ -1,14 +1,27 @@
+<!-- A company decided to give bonus of 5% to employee if his/her year of service is more than 5 years.
+Ask user for their salary and year of service and print the net bonus amount. -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
+    <script src="./script.js">
+       
+    </script>
 </head>
 <body>
-    <label for="salery"> salery</label>
-    <input type="number" id="salery">
-    <label for="year">year of service</label>
-    <input type="number"  id="year">
+    
+    <label for="salary">Enter your salary: </label>
+    <input type="number" id="salary" step="0.01"><br><br>
+
+    <label for="yearsOfService">Enter years of service: </label>
+    <input type="number" id="yearsOfService"><br><br>
+
+    <button onclick="calculateBonus()">Calculate Bonus</button>
+
+    <p id="result"></p>
 </body>
 </html>

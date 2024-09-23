@@ -1,0 +1,24 @@
+<!-- Write a program to calculate the electricity bill (accept number of unit from user) according to the following criteria :
+             Unit                                                     Price  
+First 100 units                                               no charge
+Next 100 units                                              Rs 5 per unit
+After 200 units                                             Rs 10 per unit
+(For example if input unit is 350 than total bill amount is Rs2000) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>electric bill</title>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <h1>electricity bill</h1>
+    <label for="unit"> enter the unit</label>
+    <input type="number" id="unit">
+    <button onclick="unit()">submit</button>
+    <h1 id="h1"></h1>
+    
+</body>
+</html>

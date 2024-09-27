@@ -27,11 +27,23 @@ d.forEach(element => {
       edit_td.appendChild(edit_btn)
       t_row.appendChild(edit_td)
 
+      const del_td=document.createElement('td')
+      const del_btn=document.createElement('button')
+      del_btn.textContent='delete'
+      del_btn.onclick=function(){
+        delete_data(element.name)
+      }
+      del_td.appendChild(del_btn)
+      t_row.appendChild(del_td)
+
+   
+
       t_var.appendChild(t_row)
 
     
 });
 }
+// to add user input element to the table
 document.getElementById('Submit_form').addEventListener('submit',function(event){
     event.preventDefault()  
     const name=document.getElementById('name').value 
@@ -78,8 +90,15 @@ document.getElementById('edit_form').addEventListener('submit',function(event){
 
 })
 
-
-
+function delete_data (name){
+console.log(name);
+d=d.filter(user=>{
+    if(user.name!=name){
+        return user
+    }
+})
+display()
+}
 
 
 

@@ -35,14 +35,15 @@
 // }
 // const a=setInterval(display,500)
     
-let count=10
+let count=60
 let c=setInterval(function(){
     console.log(count);
     count--
+    document.getElementById('h2').innerHTML=count
     if(count==0){
         clearInterval(c)
-        console.log('completed');
+        console.log('completed one houer');
     
     }
     
-},500)
+},100)

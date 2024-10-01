@@ -8,7 +8,7 @@
         .container{
             display: flex;
             flex-direction: column;
-            width: 20%;
+            width: 20%; background: #13cfe0;
         
 
         } 
@@ -28,6 +28,9 @@
         tbody{
             background: #ba4343;
             color: aliceblue    ;   
+        }
+        #student_edit_data{
+            display: none;
         }
         
         
@@ -60,6 +63,19 @@
            <input type="submit"  value="submit" ><br>
         </div>
     </form>
+
+    <form action="" id="student_edit_data">
+        <div class="container">
+          id=  <input type="text" id="e_id" placeholder="id" >
+          name=  <input type="text"  id="e_name" placeholder="name">
+           age= <input type="number" id="e_age" placeholder="age">
+           email= <input type="text" id="e_email" placeholder="abc.@gmail.com">
+            cource=<input type="text" id="e_cource" placeholder="cource">
+           date= <input type="date" id="e_date" > <br>
+           <input type="submit"  value="update" ><br>
+        </div>
+    </form>
+
     <script src="./script.js"></script>
 </body>
 </html>

@@ -34,16 +34,61 @@
 //     console.log('end');
 // }
 // const a=setInterval(display,500)
+
+// clock 
     
-let count=60
+// let count=60
+// let c=setInterval(function(){
+//     console.log(count);
+//     count--
+//     document.getElementById('h2').innerHTML=count
+//     if(count==0){
+//         clearInterval(c)
+//         console.log('completed ');
+    
+//     }
+    
+// },100)
+
+// function clock(){
+//     let count =60
+//     let c=setInterval(function(){
+//         console.log(count);
+//         count--
+//         const main=document.querySelector('.main')
+//         const div=document.createElement('div')
+//         if(count==0){
+//             clearInterval(c)
+//             console.log('compleat ');
+            
+//         }
+//         div.innerHTML=`<h2>00:${count}</h2>`
+//         main.appendChild(div)
+        
+//     });
+// }
+
+function demo(){
+    const main=document.querySelector('.main')
+    const div=document.createElement('div')
+let count=10
+let count1=3
 let c=setInterval(function(){
-    console.log(count);
+     div.innerHTML=`<h2>${count1}:${count}</h2>`
     count--
-    document.getElementById('h2').innerHTML=count
-    if(count==0){
-        clearInterval(c)
-        console.log('completed one houer');
-    
+       if(count==0){
+        count1--
+        count=10
+               
     }
-    
-},100)
+    if (count1==0){
+        clearInterval(c)
+        console.log('compleat');
+        
+    }
+   
+
+},500)
+main.appendChild(div)   
+}
+demo()
